@@ -53,7 +53,7 @@ const MyTour = () => {
             });
     };
     return (
-        <>
+        <div className='mytour'>
             <h1 className='text-center my-5'>My Tour</h1>
 
             {allBooking.length === 0 ? (
@@ -94,7 +94,7 @@ const MyTour = () => {
                     ))}
                 </Table>
             )}
-        </>
+        </div>
     );
 };
 
