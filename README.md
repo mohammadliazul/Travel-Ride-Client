@@ -1,7 +1,7 @@
 
 ## TRAVEL RIDE
 
-## Live Link :- [TRAVEL RIDE](https://phassignment10.netlify.app/).
+## Live Link :- [TRAVEL RIDE](https://travel--ride.web.app/).
 
 ### **Features**
 
