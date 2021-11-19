@@ -1,0 +1,12 @@
+.banner-bg{
+    background-image: url("../../Images/background.jpg");
+    background-repeat: no-repeat;
+}
+.text{
+    color: rgb(153, 152, 152);
+}
+.icon{
+    background-color: rgb(59, 182, 141);
+    border-radius: 50%;
+    width: auto;
+}

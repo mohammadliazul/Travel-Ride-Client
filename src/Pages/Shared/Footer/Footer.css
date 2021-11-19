@@ -1,0 +1,24 @@
+.footer-logo{
+    color: #EF6C00;
+}
+.social-icon {
+    list-style: none;
+    cursor: pointer;
+  }
+.fb:hover {
+   fill: #1877f2;
+  }
+.utube:hover {
+   fill: #ff0000;
+  }
+.whatapp:hover {
+   fill: #25d366;
+  }
+.twit:hover {
+   fill: #00aaf8;
+  }
+  
+.fill-color{
+    fill: grey;
+}
+
