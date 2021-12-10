@@ -105,7 +105,8 @@ const ManageBooking = () => {
                                     defaultValue={pd.status}
                                 /> */}
                                 <select onChange={handleStatus}>
-                                    <option value={pd?.status}>Pending</option>
+                                    <option value={pd?.status}>{pd?.status}</option>
+                                    <option value="Pending">Pending</option>
                                     <option value="Confirm">Confirm</option>
                                 </select>
                             </td>
