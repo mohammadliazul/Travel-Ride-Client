@@ -104,18 +104,14 @@ const ManageBooking = () => {
                                     type="text"
                                     defaultValue={pd.status}
                                 /> */}
-                                {/* <select onChange={handleStatus}>
-                                    {pd?.status === "Pending" && {} }
+
+                                <select onChange={handleStatus}>
                                     <option value={pd?.status}>{pd?.status}</option>
                                     <option value="Pending">Pending</option>
                                     <option value="Confirm">Confirm</option>
-                                </select> */}
-
-                                <select onChange={handleStatus}>
-                                    {pd?.status === "Pending" ? ((<option value={pd?.status}>{pd?.status}</option>)
-                                        (<option value="Pending">Pending</option>)) : pd?.status === "Confirm" && ((<option value="Pending">Pending</option>)
-                                            (<option value={pd?.status}>{pd?.status}</option>))}
                                 </select>
+
+
                             </td>
                             <td>
                                 <button className="btn-delete px-2 py-1" onClick={() => handleDelete(pd?._id)}>Delete</button>
