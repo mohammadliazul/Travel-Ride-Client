@@ -2,11 +2,10 @@ import React, { useEffect, useState } from "react";
 import { Image, Table } from "react-bootstrap";
 import Swal from "sweetalert2";
 import './ManageBooking.css';
-import { useForm } from "react-hook-form";
 
 const ManageBooking = () => {
     const [booking, setBooking] = useState([]);
-    const { register } = useForm();
+
     const [status, setStatus] = useState("");
 
     const handleStatus = (e) => {
@@ -105,10 +104,19 @@ const ManageBooking = () => {
                                     type="text"
                                     defaultValue={pd.status}
                                 /> */}
-                                <select {...register("status")} onChange={handleStatus}>
-                                    {/* <option  value={pd?.status}>{pd?.status}</option> */}
+                                {/* <select onChange={handleStatus}>
+                                    {pd?.status === "Pending" && {} }
+                                    <option value={pd?.status}>{pd?.status}</option>
                                     <option value="Pending">Pending</option>
                                     <option value="Confirm">Confirm</option>
+                                </select> */}
+
+                                <select onChange={handleStatus}>
+                                    {pd?.status === "Pending" && ((<option value={pd?.status}>{pd?.status}</option>)
+                                        (<option value="Pending">Pending</option>))}
+
+                                    {pd?.status === "Confirm" && ((<option value="Pending">Pending</option>)
+                                        (<option value={pd?.status}>{pd?.status}</option>))}
                                 </select>
                             </td>
                             <td>
