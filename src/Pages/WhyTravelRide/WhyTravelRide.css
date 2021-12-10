@@ -1,6 +1,7 @@
 .banner-bg{
     background-image: url("../../Images/background.jpg");
     background-repeat: no-repeat;
+    object-fit: cover;
 }
 .text{
     color: rgb(153, 152, 152);
@@ -9,4 +10,7 @@
     background-color: rgb(59, 182, 141);
     border-radius: 50%;
     width: auto;
+}
+span{
+    color: #EF6C00;
 }

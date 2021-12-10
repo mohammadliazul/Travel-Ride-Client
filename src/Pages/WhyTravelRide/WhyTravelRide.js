@@ -13,12 +13,12 @@ const WhyTravelRide = () => {
         <div className='banner-bg'>
             <div className='py-5'>
                 <div>
-                    <h1 className='text-center'>Why Travel-Ride</h1>
+                    <h1 className='text-center mb-2'>Why <span>Travel-Ride</span></h1>
                 </div>
                 <Container>
                     <Row className='mt-3'>
                         <Col xs={12} md={6} lg={4}>
-                            <div className='d-flex align-items-center p-3 bg-white'>
+                            <div className='d-flex align-items-center p-3 bg-white mb-3'>
                                 <div>
                                     <Image className='icon p-4 m-3  ' src={img1} />
                                 </div>
@@ -29,7 +29,7 @@ const WhyTravelRide = () => {
                             </div>
                         </Col>
                         <Col xs={12} md={6} lg={4} >
-                            <div className='d-flex align-items-center p-3 bg-white'>
+                            <div className='d-flex align-items-center p-3 bg-white mb-3'>
                                 <div>
                                     <Image className='icon p-4 m-3 ' src={img2} />
                                 </div>
@@ -53,7 +53,7 @@ const WhyTravelRide = () => {
                     </Row>
                     <Row className='mt-3'>
                         <Col xs={12} md={6} lg={4} >
-                            <div className='d-flex align-items-center p-3 bg-white'>
+                            <div className='d-flex align-items-center p-3 bg-white mb-3'>
                                 <div>
                                     <Image className='icon p-4 m-3' src={img4} />
                                 </div>
@@ -64,7 +64,7 @@ const WhyTravelRide = () => {
                             </div>
                         </Col>
                         <Col xs={12} md={6} lg={4} >
-                            <div className='d-flex align-items-center p-3 bg-white'>
+                            <div className='d-flex align-items-center p-3 bg-white mb-3'>
                                 <div>
                                     <Image className='icon p-4 m-3' src={img5} />
                                 </div>
@@ -75,7 +75,7 @@ const WhyTravelRide = () => {
                             </div>
                         </Col>
                         <Col xs={12} md={6} lg={4}>
-                            <div className='d-flex align-items-center p-3 bg-white'>
+                            <div className='d-flex align-items-center p-3 bg-white '>
                                 <div>
                                     <Image className='icon p-4 m-3' src={img6} />
                                 </div>

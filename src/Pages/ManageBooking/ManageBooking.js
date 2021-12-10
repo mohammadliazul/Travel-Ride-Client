@@ -21,7 +21,7 @@ const ManageBooking = () => {
 
     // const status = "apporved";
     const handleUpdate = (id) => {
-        fetch(`https://glacial-garden-93428.herokuapp.com//updateStatus/${id}`, {
+        fetch(`https://glacial-garden-93428.herokuapp.com/updateStatus/${id}`, {
             method: "PUT",
             headers: { "content-type": "application/json" },
             body: JSON.stringify({ status }),
