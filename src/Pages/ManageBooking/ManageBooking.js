@@ -112,11 +112,9 @@ const ManageBooking = () => {
                                 </select> */}
 
                                 <select onChange={handleStatus}>
-                                    {pd?.status === "Pending" && ((<option value={pd?.status}>{pd?.status}</option>)
-                                        (<option value="Pending">Pending</option>))}
-
-                                    {pd?.status === "Confirm" && ((<option value="Pending">Pending</option>)
-                                        (<option value={pd?.status}>{pd?.status}</option>))}
+                                    {pd?.status === "Pending" ? ((<option value={pd?.status}>{pd?.status}</option>)
+                                        (<option value="Pending">Pending</option>)) : pd?.status === "Confirm" && ((<option value="Pending">Pending</option>)
+                                            (<option value={pd?.status}>{pd?.status}</option>))}
                                 </select>
                             </td>
                             <td>
