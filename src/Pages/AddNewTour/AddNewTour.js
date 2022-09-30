@@ -9,7 +9,7 @@ const AddNewTour = () => {
 
     const onSubmit = data => {
         console.log(data);
-        axios.post('https://glacial-garden-93428.herokuapp.com/tours', data)
+        axios.post('https://travel-ride-server-side.vercel.app/tours', data)
             .then(res => {
                 // console.log(res);
                 if (res.data.insertedId) {

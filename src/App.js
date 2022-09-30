@@ -31,7 +31,7 @@ function App() {
               <Home></Home>
             </Route>
             <Route path='/tours'>
-              <Services></Services>
+              <Services className="my-5"></Services>
             </Route>
             <PrivateRoute path='/admin'>
               <Admin></Admin>

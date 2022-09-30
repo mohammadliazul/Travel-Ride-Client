@@ -1,16 +1,18 @@
-.banner-bg{
-    background-image: url("../../Images/background.jpg");
-    background-repeat: no-repeat;
-    object-fit: cover;
+.banner-bg {
+  background: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)),
+    url("../../Images/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
-.text{
-    color: rgb(153, 152, 152);
+.text {
+  color: rgb(153, 152, 152);
 }
-.icon{
-    background-color: rgb(59, 182, 141);
-    border-radius: 50%;
-    width: auto;
+.icon {
+  background-color: rgb(59, 182, 141);
+  border-radius: 50%;
+  width: auto;
 }
-span{
-    color: #EF6C00;
+span {
+  color: #ef6c00;
 }

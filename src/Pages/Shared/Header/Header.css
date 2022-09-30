@@ -1,25 +1,25 @@
-.nav-Link{
-    text-decoration: none;
-    margin-left: 30px;
+.nav-Link {
+  text-decoration: none;
+  margin-left: 30px;
+  transition: 0.5s ease-in-out;
 }
-.nav-bar{
-    background-color: #EF6C00;
+.nav-bar {
+  background-color: #ef6c00;
 }
-.hv:hover{
-    background-color: chocolate;
+.hv:hover {
+  background-color: chocolate;
 }
-.login{
-    text-decoration: none;
-    color: #000;
-    
-}
-
-.btn-authentication{
-    border: none;
-    border-radius: 5px;
-    background-color: #FFFFFF;
-}
-.btn-authentication:hover, .login:hover{
-    color: rgb(248, 103, 0);
+.login {
+  text-decoration: none;
+  color: #000;
 }
 
+.btn-authentication {
+  border: none;
+  border-radius: 5px;
+  background-color: #ffffff;
+}
+.btn-authentication:hover,
+.login:hover {
+  color: rgb(248, 103, 0);
+}

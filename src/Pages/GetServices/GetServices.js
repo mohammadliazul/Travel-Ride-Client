@@ -25,7 +25,7 @@ const GetServices = () => {
         data.status = "Pending";
 
 
-        fetch('https://glacial-garden-93428.herokuapp.com/tour_booking', {
+        fetch('https://travel-ride-server-side.vercel.app/tour_booking', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -57,7 +57,7 @@ const GetServices = () => {
                         <Col md={6}>
                             <Image className='mt-4' src={singleItem?.image} fluid alt="details Image" />
                             <p className='fs-4 mt-2 text-gray '>{singleItem?.details}</p>
-                            <p className='fs-5 text-gray '><i class="far fa-clock"></i> {singleItem?.days} Days</p>
+                            <p className='fs-5 text-gray '><i className="far fa-clock"></i> {singleItem?.days} Days</p>
                             <p className='fs-5 text-gray '>$ {singleItem?.price}</p>
                         </Col>
                         <Col md={6} className="d-flex justify-content-center align-items-center">

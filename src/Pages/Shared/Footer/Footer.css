@@ -1,24 +1,23 @@
-.footer-logo{
-    color: #EF6C00;
+.footer-logo {
+  color: #ef6c00;
 }
 .social-icon {
-    list-style: none;
-    cursor: pointer;
-  }
-.fb:hover {
-   fill: #1877f2;
-  }
-.utube:hover {
-   fill: #ff0000;
-  }
-.whatapp:hover {
-   fill: #25d366;
-  }
-.twit:hover {
-   fill: #00aaf8;
-  }
-  
-.fill-color{
-    fill: grey;
+  list-style: none;
+  cursor: pointer;
+}
+.icon-style {
+  transition: 0.5s ease-in-out;
+}
+.icon-style:hover {
+  fill: #ef6c00;
 }
 
+.fill-color {
+  fill: grey;
+}
+.developer {
+  color: inherit;
+}
+.developer:hover {
+  color: #0dcaf0;
+}

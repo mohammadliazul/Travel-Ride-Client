@@ -13,7 +13,7 @@ const ManageBooking = () => {
     };
     // console.log(status);
     useEffect(() => {
-        fetch("https://glacial-garden-93428.herokuapp.com/allBooking")
+        fetch("https://travel-ride-server-side.vercel.app/allBooking")
             .then((res) => res.json())
             .then((data) => setBooking(data));
     }, [booking, status]);
@@ -21,7 +21,7 @@ const ManageBooking = () => {
 
     // const status = "apporved";
     const handleUpdate = (id) => {
-        fetch(`https://glacial-garden-93428.herokuapp.com/updateStatus/${id}`, {
+        fetch(`https://travel-ride-server-side.vercel.app/updateStatus/${id}`, {
             method: "PUT",
             headers: { "content-type": "application/json" },
             body: JSON.stringify({ status }),
@@ -54,7 +54,7 @@ const ManageBooking = () => {
         });
     };
     const deleteTour = id => {
-        const url = `https://glacial-garden-93428.herokuapp.com/delete_booking/${id}`;
+        const url = `https://travel-ride-server-side.vercel.app/delete_booking/${id}`;
         fetch(url, {
             method: 'DELETE',
         })

@@ -1,20 +1,22 @@
+.service {
+  transition: 0.5s;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  background-color: #ffffff;
+}
+.service:hover {
+  box-shadow: 2px 5px 10px gray;
+}
+.button {
+  background-color: #ef6c00;
+  border: #ef6c00;
+  color: white;
+  border-radius: 5px;
+  width: max-content;
+}
 
-.service { 
-    height: 490px;
-    transition: 0.5s;
-    border: 1px solid gray;
-    background-color: #ffffff;
-  }
-  .half{
-      height: 430px;
-  }
-  .service:hover {
-    box-shadow: 2px 5px 10px gray;
-  }
-  .button{
-      background-color: #EF6C00;
-      border:#EF6C00;
-      color: white;
-      border-radius: 5px;
-      width: max-content;
-  }
+.service i {
+  color: #ef6c00;
+}
+.service span {
+  color: #ef6c00;
+}

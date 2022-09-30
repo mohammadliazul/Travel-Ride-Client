@@ -6,12 +6,12 @@ import './ManageTours.css';
 const ManageTours = () => {
     const [tours, setTours] = useState([]);
     useEffect(() => {
-        fetch('https://glacial-garden-93428.herokuapp.com/tours')
+        fetch('https://travel-ride-server-side.vercel.app/tours')
             .then(res => res.json())
             .then(data => setTours(data))
     }, [tours]);
     // const handleDelete = id => {
-    //     const url = `https://glacial-garden-93428.herokuapp.com/getservices/${id}`;
+    //     const url = `https://travel-ride-server-side.vercel.app/getservices/${id}`;
     //     fetch(url, {
     //         method: 'DELETE'
     //     })
@@ -44,7 +44,7 @@ const ManageTours = () => {
         });
     };
     const deleteTour = id => {
-        const url = `https://glacial-garden-93428.herokuapp.com/getservices/${id}`;
+        const url = `https://travel-ride-server-side.vercel.app/getservices/${id}`;
         fetch(url, {
             method: 'DELETE',
         })

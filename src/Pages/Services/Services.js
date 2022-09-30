@@ -12,8 +12,8 @@ const Services = () => {
 
     return (
         <div>
-            <div className='container py-2'>
-                <div className="row">
+            <div className='container py-5'>
+                <div className="row py-5">
                     {servicesData.map(tour => <div key={tour._id} className="col-md-6 col-lg-4 col-sm-12">
                         <div className="service p-3 m-3">
                             <div className="half">
@@ -21,8 +21,8 @@ const Services = () => {
                                 <h3 className="mt-4">{tour.title}</h3>
                                 <p className="mt-2">{tour.details}</p>
                                 <div className='d-flex justify-content-between'>
-                                    <h5><i class="far fa-clock"></i> {tour.days} days</h5>
-                                    <h5>$ {tour.price}</h5>
+                                    <h5><i className="far fa-clock"></i> {tour.days} days</h5>
+                                    <h5><span>$</span> {tour.price}</h5>
                                 </div>
                             </div>
 

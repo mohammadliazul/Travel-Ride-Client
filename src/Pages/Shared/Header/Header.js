@@ -10,7 +10,7 @@ const Header = () => {
     const { user, logOut } = useAuth();
     return (
         <div>
-            <Navbar collapseOnSelect expand="lg" className='nav-bar' sticky="top">
+            <Navbar collapseOnSelect expand="lg" className='nav-bar' fixed="top">
                 <Container>
                     <Navbar.Brand as={HashLink} to="/home#home">
                         <Image src='https://aaryaweb.info/html/travelride/tr001/images/logo.png' />
