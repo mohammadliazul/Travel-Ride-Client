@@ -9,7 +9,7 @@ const AddNewTour = () => {
 
     const onSubmit = data => {
         console.log(data);
-        axios.post('https://travel-ride-server-side.vercel.app/tours', data)
+        axios.post('https://travel-ride.onrender.com/tours', data)
             .then(res => {
                 // console.log(res);
                 if (res.data.insertedId) {
@@ -26,8 +26,8 @@ const AddNewTour = () => {
             })
     }
     return (
-        <div className="add-tour">
-            <h1 className='text-center mb-3'>Add New Tour</h1>
+        <div className="add-tour mt-5">
+            <h1 className='text-center mb-3 mt-5'>Add New Tour</h1>
             <form onSubmit={handleSubmit(onSubmit)}>
                 <input {...register("title", { required: true, maxLength: 25 })} placeholder="Title" />
                 <textarea {...register("details")} placeholder="Details" />

@@ -12,13 +12,13 @@ const Admin = () => {
 
 
     return (
-        <div className="admin-container">
+        <div className="admin-container mt-5">
             <div className="dashboard">
                 <div className="admin-box">
                     <div className="row admin-container">
                         <div className="col-md-3 ">
                             <div className="admin-area p-1">
-                                <h3 className='text-center mt-3'>Dashboard</h3>
+                                <h3 className='ps-2 mt-3 pt-3'>Dashboard</h3>
                                 <div className="all-menu mt-5">
                                     <li
                                         onClick={() => setControl("addNewTour")}

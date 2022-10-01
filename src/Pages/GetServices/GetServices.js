@@ -25,7 +25,7 @@ const GetServices = () => {
         data.status = "Pending";
 
 
-        fetch('https://travel-ride-server-side.vercel.app/tour_booking', {
+        fetch('https://travel-ride.onrender.com/tour_booking', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

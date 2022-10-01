@@ -13,7 +13,7 @@ const ManageBooking = () => {
     };
     // console.log(status);
     useEffect(() => {
-        fetch("https://travel-ride-server-side.vercel.app/allBooking")
+        fetch("https://travel-ride.onrender.com/allBooking")
             .then((res) => res.json())
             .then((data) => setBooking(data));
     }, [booking, status]);
@@ -21,7 +21,7 @@ const ManageBooking = () => {
 
     // const status = "apporved";
     const handleUpdate = (id) => {
-        fetch(`https://travel-ride-server-side.vercel.app/updateStatus/${id}`, {
+        fetch(`https://travel-ride.onrender.com/updateStatus/${id}`, {
             method: "PUT",
             headers: { "content-type": "application/json" },
             body: JSON.stringify({ status }),
@@ -54,7 +54,7 @@ const ManageBooking = () => {
         });
     };
     const deleteTour = id => {
-        const url = `https://travel-ride-server-side.vercel.app/delete_booking/${id}`;
+        const url = `https://travel-ride.onrender.com/delete_booking/${id}`;
         fetch(url, {
             method: 'DELETE',
         })
@@ -76,7 +76,7 @@ const ManageBooking = () => {
     };
 
     return (
-        <div className="container">
+        <div className="container mt-5">
             <h1>All Booking ({booking.length})</h1>
 
             <Table striped bordered hover>

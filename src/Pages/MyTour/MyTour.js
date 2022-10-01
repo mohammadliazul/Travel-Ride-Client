@@ -10,7 +10,7 @@ const MyTour = () => {
     const [allBooking, setAllBooking] = useState([]);
 
     useEffect(() => {
-        fetch(`https://travel-ride-server-side.vercel.app/tour_booking/${email}`)
+        fetch(`https://travel-ride.onrender.com/tour_booking/${email}`)
             .then(res => res.json())
             .then(data => setAllBooking(data))
     }, [allBooking, email]);
@@ -32,7 +32,7 @@ const MyTour = () => {
         });
     };
     const deleteTour = id => {
-        const url = `https://travel-ride-server-side.vercel.app/delete_booking/${id}`;
+        const url = `https://travel-ride.onrender.com/delete_booking/${id}`;
         fetch(url, {
             method: 'DELETE',
         })
@@ -53,7 +53,7 @@ const MyTour = () => {
             });
     };
     return (
-        <div className='mytour'>
+        <div className='mytour mt-5'>
             <h1 className='text-center my-5'>My Tour</h1>
 
             {allBooking.length === 0 ? (

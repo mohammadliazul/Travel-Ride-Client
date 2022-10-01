@@ -6,12 +6,12 @@ import './ManageTours.css';
 const ManageTours = () => {
     const [tours, setTours] = useState([]);
     useEffect(() => {
-        fetch('https://travel-ride-server-side.vercel.app/tours')
+        fetch('https://travel-ride.onrender.com/tours')
             .then(res => res.json())
             .then(data => setTours(data))
     }, [tours]);
     // const handleDelete = id => {
-    //     const url = `https://travel-ride-server-side.vercel.app/getservices/${id}`;
+    //     const url = `https://travel-ride.onrender.com/getservices/${id}`;
     //     fetch(url, {
     //         method: 'DELETE'
     //     })
@@ -44,7 +44,7 @@ const ManageTours = () => {
         });
     };
     const deleteTour = id => {
-        const url = `https://travel-ride-server-side.vercel.app/getservices/${id}`;
+        const url = `https://travel-ride.onrender.com/getservices/${id}`;
         fetch(url, {
             method: 'DELETE',
         })
@@ -66,7 +66,7 @@ const ManageTours = () => {
             });
     };
     return (
-        <div className="container">
+        <div className="container mt-5">
             <h1>All Tours ({tours.length})</h1>
 
             <Table striped bordered hover>

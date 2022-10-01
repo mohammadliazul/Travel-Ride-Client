@@ -1,16 +1,17 @@
-.mytour{
-    height: 100vh;
+.mytour {
+  height: 100vh;
+  padding: 27px 0 0 0;
 }
-.booking-image{
-    height: 50px;
-    width: 50px;
+.booking-image {
+  height: 50px;
+  width: 50px;
 }
-.btn-delete{
-    border-radius: 6px;
-    background-color: #e40c04;
-    border-color: #e40c04;
-    color:  #FFFFFF;
+.btn-delete {
+  border-radius: 6px;
+  background-color: #e40c04;
+  border-color: #e40c04;
+  color: #ffffff;
 }
-.btn-delete:hover{
-    color:  #c8c8c8;
+.btn-delete:hover {
+  color: #c8c8c8;
 }
