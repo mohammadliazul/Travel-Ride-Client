@@ -7,7 +7,7 @@
   box-shadow: 2px 5px 10px gray;
 }
 .button {
-  background-color: #ef6c00;
+  background-color: #5c7cfb;
   border: #ef6c00;
   color: white;
   border-radius: 5px;
@@ -15,8 +15,5 @@
 }
 
 .service i {
-  color: #ef6c00;
-}
-.service span {
-  color: #ef6c00;
+  color: #5c7cfb;
 }

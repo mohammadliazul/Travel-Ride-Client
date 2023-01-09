@@ -1,25 +1,29 @@
 .nav-Link {
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
   text-decoration: none;
   margin-left: 30px;
   transition: 0.5s ease-in-out;
+  color: #ffffffcc;
 }
 .nav-bar {
-  background-color: #ef6c00;
+  background-color: #2642a3;
 }
 .hv:hover {
-  background-color: chocolate;
-}
-.login {
-  text-decoration: none;
-  color: #000;
+  color: #ffffff;
 }
 
 .btn-authentication {
-  border: none;
-  border-radius: 5px;
+  border: 1px solid #ffffff;
+  background-color: transparent;
+  color: white;
+  border-radius: 3px;
+  padding: 8px 0;
+}
+.btn-authentication:hover {
+  color: #2642a3;
   background-color: #ffffff;
 }
-.btn-authentication:hover,
-.login:hover {
-  color: rgb(248, 103, 0);
+.show > .navbar-nav > .nav-Link {
+  margin-left: 0;
 }

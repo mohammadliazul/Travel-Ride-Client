@@ -45,15 +45,6 @@ function App() {
             <PrivateRoute path='/myTour'>
               <MyTour></MyTour>
             </PrivateRoute>
-            {/* <PrivateRoute path='/addNewTour'>
-              <AddNewTour></AddNewTour>
-            </PrivateRoute>
-            <PrivateRoute path='/manageTours'>
-              <ManageTours></ManageTours>
-            </PrivateRoute>
-            <PrivateRoute path='/manageBooking'>
-              <ManageBooking></ManageBooking>
-            </PrivateRoute> */}
             <Route path='*'>
               <NotFound></NotFound>
             </Route>

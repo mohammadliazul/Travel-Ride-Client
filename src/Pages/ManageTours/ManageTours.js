@@ -6,12 +6,12 @@ import './ManageTours.css';
 const ManageTours = () => {
     const [tours, setTours] = useState([]);
     useEffect(() => {
-        fetch('https://travel-ride.onrender.com/tours')
+        fetch(`${process.env.REACT_APP_SERVER_API}/tours`)
             .then(res => res.json())
             .then(data => setTours(data))
     }, [tours]);
     // const handleDelete = id => {
-    //     const url = `https://travel-ride.onrender.com/getservices/${id}`;
+    //     const url = `${process.env.REACT_APP_SERVER_API}/getservices/${id}`;
     //     fetch(url, {
     //         method: 'DELETE'
     //     })
@@ -44,7 +44,7 @@ const ManageTours = () => {
         });
     };
     const deleteTour = id => {
-        const url = `https://travel-ride.onrender.com/getservices/${id}`;
+        const url = `${process.env.REACT_APP_SERVER_API}/getservices/${id}`;
         fetch(url, {
             method: 'DELETE',
         })

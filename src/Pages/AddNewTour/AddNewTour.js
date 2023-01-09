@@ -9,7 +9,7 @@ const AddNewTour = () => {
 
     const onSubmit = data => {
         console.log(data);
-        axios.post('https://travel-ride.onrender.com/tours', data)
+        axios.post(`${process.env.REACT_APP_SERVER_API}/tours`, data)
             .then(res => {
                 // console.log(res);
                 if (res.data.insertedId) {

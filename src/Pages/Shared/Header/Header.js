@@ -3,6 +3,7 @@ import React from 'react';
 import { Container, Image, Nav, Navbar } from 'react-bootstrap';
 import { Link, NavLink } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
+import logo from '../../../Images/logo.png';
 import useAuth from '../../../hooks/useAuth';
 import './Header.css';
 
@@ -13,23 +14,27 @@ const Header = () => {
             <Navbar collapseOnSelect expand="lg" className='nav-bar' fixed="top">
                 <Container>
                     <Navbar.Brand as={HashLink} to="/home#home">
-                        <Image src='https://aaryaweb.info/html/travelride/tr001/images/logo.png' />
+                        <div className='d-flex align-items-end'>
+                            <Image width="48" height="53" src={logo} alt="logo"/> 
+                            <h2 className='text-white ps-2'>Travel Ride</h2>
+                        </div>
+                        
                     </Navbar.Brand>
                     <Navbar.Toggle />
                     <Navbar.Collapse  >
                         <Nav className="mx-auto">
                             <NavLink as={HashLink} to='/home#home' className='nav-Link fw-3 text-white hv fs-5' >Home</NavLink>
-                            <NavLink as={HashLink} to='/tours' className='nav-Link fw-3 text-white hv fs-5' >Tours</NavLink>
+                            <NavLink as={HashLink} to='/tours' className='nav-Link fw-3  hv fs-5' >Tours</NavLink>
                             {/* <NavLink to='/about' className='nav-Link fw-3 text-white hv fs-5' >About</NavLink> */}
-                            <NavLink to='/myTour' className='nav-Link fw-3 text-white hv fs-5' >My Tour</NavLink>
+                            <NavLink to='/myTour' className='nav-Link fw-3 hv fs-5' >My Tour</NavLink>
                             {/* <NavLink to='/manageBooking' className='nav-Link fw-3 text-white hv fs-5' >Manage Booking</NavLink>
                             <NavLink to='/addNewTour' className='nav-Link fw-3 text-white hv fs-5 ' >Add New Tour</NavLink>
                             <NavLink to='/manageTours' className='nav-Link fw-3 text-white hv fs-5' >Manage Tours</NavLink> */}
-                            <NavLink to='/admin' className='nav-Link fw-3 text-white hv fs-5' >Admin</NavLink>
+                            <NavLink to='/admin' className='nav-Link fw-3 hv fs-5' >Admin</NavLink>
                         </Nav>
                         <Nav>
 
-                            <Link className='nav-Link mt-2'><img
+                            <Link to='' className='nav-Link mt-2'><img
                                 className="rounded-circle"
                                 style={{ width: '40px' }}
                                 src={user?.photoURL}
@@ -37,13 +42,13 @@ const Header = () => {
                             /></Link>
                             {
                                 user?.email &&
-                                <Navbar.Text className='text-white fw-3 text-white fs-5 mt-1 ms-2' > {user?.displayName}</Navbar.Text>
+                                <Navbar.Text className='text-white fw-3 fs-5 mt-1 ms-2' > {user?.displayName}</Navbar.Text>
 
                             }
                             {
                                 user?.email ?
                                     <Button onClick={logOut} className='fw-3 btn-authentication fs-5 px-3 ms-2 my-1'>Log Out</Button> :
-                                    <Button className='btn-authentication fw-3 fs-5 px-3'><NavLink className='login' to='/login'>Login</NavLink></Button>
+                                    <NavLink className='login' to='/login'><Button className='btn-authentication fw-3 fs-5 px-3'>Login</Button></NavLink>
                             }
                         </Nav>
                     </Navbar.Collapse>

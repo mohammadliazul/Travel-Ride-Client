@@ -1,5 +1,5 @@
 .footer-logo {
-  color: #ef6c00;
+  color: #5c7cfb;
 }
 .social-icon {
   list-style: none;
@@ -9,7 +9,9 @@
   transition: 0.5s ease-in-out;
 }
 .icon-style:hover {
-  fill: #ef6c00;
+  fill: #5c7cfb;
+  background-color: #ffffff;
+  padding: 0;
 }
 
 .fill-color {

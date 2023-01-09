@@ -13,7 +13,7 @@ const ManageBooking = () => {
     };
     // console.log(status);
     useEffect(() => {
-        fetch("https://travel-ride.onrender.com/allBooking")
+        fetch(`${process.env.REACT_APP_SERVER_API}/allBooking`)
             .then((res) => res.json())
             .then((data) => setBooking(data));
     }, [booking, status]);
@@ -21,7 +21,7 @@ const ManageBooking = () => {
 
     // const status = "apporved";
     const handleUpdate = (id) => {
-        fetch(`https://travel-ride.onrender.com/updateStatus/${id}`, {
+        fetch(`${process.env.REACT_APP_SERVER_API}/updateStatus/${id}`, {
             method: "PUT",
             headers: { "content-type": "application/json" },
             body: JSON.stringify({ status }),
@@ -54,7 +54,7 @@ const ManageBooking = () => {
         });
     };
     const deleteTour = id => {
-        const url = `https://travel-ride.onrender.com/delete_booking/${id}`;
+        const url = `${process.env.REACT_APP_SERVER_API}/delete_booking/${id}`;
         fetch(url, {
             method: 'DELETE',
         })
@@ -105,10 +105,9 @@ const ManageBooking = () => {
                                     defaultValue={pd.status}
                                 /> */}
 
-                                <select onChange={handleStatus}>
-                                    <option value={pd?.status}>{pd?.status}</option>
+                                <select onChange={handleStatus} value={pd?.status}>
                                     <option value="Pending">Pending</option>
-                                    <option value="Confirm">Confirm</option>
+                                    <option value="Confirm">Confirm</option> 
                                 </select>
 
 

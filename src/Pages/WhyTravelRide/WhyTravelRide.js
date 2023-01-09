@@ -57,7 +57,7 @@ const WhyTravelRide = () => {
                 <Container>
                     <Row className='mt-3'>
                     {advantages.map(({id, title, sub_title, pic}) =>
-                        <Col xs={12} md={6} lg={4}>
+                        <Col key={id} xs={12} md={6} lg={4}>
                             <div  className='d-flex align-items-center p-3 bg-white mb-3 rounded'>
                                 <div>
                                     <Image className='icon p-4 m-3' src={pic} />

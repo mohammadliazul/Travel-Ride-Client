@@ -6,13 +6,14 @@ const useServices = () => {
     const [servicesData, setServicesData] = useState([]);
 
     useEffect(() => {
-        fetch('https://travel-ride.onrender.com/tours')
+        fetch(`${process.env.REACT_APP_SERVER_API}/tours`)
             .then(res => res.json())
             .then(data => 
                 setServicesData(data)
             );
     }, []);
     return [servicesData, setServicesData];
+
 };
 
 export default useServices;

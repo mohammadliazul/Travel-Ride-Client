@@ -25,7 +25,7 @@ const GetServices = () => {
         data.status = "Pending";
 
 
-        fetch('https://travel-ride.onrender.com/tour_booking', {
+        fetch(`${process.env.REACT_APP_SERVER_API}/tour_booking`, {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -52,13 +52,13 @@ const GetServices = () => {
         <>
             <Container className='box-shadow my-5 font-name bg-white pb-5'>
                 <div>
-                    <h2 className='text-center pb-3 fw-bold'>Travel to {singleItem?.title}</h2>
+                    <h2 className='tourTitle text-center pb-3 fw-bold'>Travel to {singleItem?.title}</h2>
                     <Row>
                         <Col md={6}>
                             <Image className='mt-4' src={singleItem?.image} fluid alt="details Image" />
-                            <p className='fs-4 mt-2 text-gray '>{singleItem?.details}</p>
-                            <p className='fs-5 text-gray '><i className="far fa-clock"></i> {singleItem?.days} Days</p>
-                            <p className='fs-5 text-gray '>$ {singleItem?.price}</p>
+                            <h5 className='fw-bold mt-2 text-gray '>{singleItem?.details}</h5>
+                            <p className='fs-5 text-gray '><i className="far fa-clock orangeColor"></i> {singleItem?.days} Days</p>
+                            <p className='fs-5 text-gray '><span className='orangeColor'>$</span> {singleItem?.price}</p>
                         </Col>
                         <Col md={6} className="d-flex justify-content-center align-items-center">
                             <form className="booking-form" onSubmit={handleSubmit(onSubmit)}>

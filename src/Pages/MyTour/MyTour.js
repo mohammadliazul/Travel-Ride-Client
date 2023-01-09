@@ -10,7 +10,7 @@ const MyTour = () => {
     const [allBooking, setAllBooking] = useState([]);
 
     useEffect(() => {
-        fetch(`https://travel-ride.onrender.com/tour_booking/${email}`)
+        fetch(`${process.env.REACT_APP_SERVER_API}/tour_booking/${email}`)
             .then(res => res.json())
             .then(data => setAllBooking(data))
     }, [allBooking, email]);
@@ -32,7 +32,7 @@ const MyTour = () => {
         });
     };
     const deleteTour = id => {
-        const url = `https://travel-ride.onrender.com/delete_booking/${id}`;
+        const url = `${process.env.REACT_APP_SERVER_API}/delete_booking/${id}`;
         fetch(url, {
             method: 'DELETE',
         })

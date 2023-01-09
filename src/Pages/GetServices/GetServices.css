@@ -1,27 +1,33 @@
-.font-name{
-    font-family:sans-serif;
+.font-name {
+  font-family: sans-serif;
 }
 /* .box-shadow{
     box-shadow: 0px 15px 16.83px 0.17px rgba(0, 0, 0, 0.05);
     border-radius: 15px;
 } */
+.tourTitle {
+  margin-top: 120px;
+}
 
-.booking-form{
-    margin:0px 150px;
+.booking-form {
+  margin: 0px 150px;
 }
 .booking-form input {
-    display: block;
-    margin-top: 30px;
-    padding: 5px;
-    border: 1px solid gray;
-    border-radius: 5px;
-    width: 350px;
+  display: block;
+  margin-top: 30px;
+  padding: 5px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  width: 350px;
 }
-.error{
-    color: red;
+.error {
+  color: red;
 }
-.confirm-booking{
-    background-color: #EF6C00;
-    border-color: #EF6C00;
-    color:  #FFFFFF;
+.confirm-booking {
+  background-color: #ef6c00;
+  border-color: #ef6c00;
+  color: #ffffff;
+}
+.orangeColor {
+  color: #ef6c00;
 }
