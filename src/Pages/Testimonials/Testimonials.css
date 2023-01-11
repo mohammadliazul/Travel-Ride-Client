@@ -7,9 +7,9 @@
   margin: 0;
   padding: 0;
 }
-i {
+.testimonial-contents i {
   color: grey;
 }
-span {
+.testimonial-h-wrapper span {
   color: #5c7cfb;
 }

@@ -8,7 +8,7 @@ import './Testimonials.css';
 const Testimonials = () => {
     return (
         <div className='container  py-5'>
-            <div className='text-center'>
+            <div className='text-center testimonial-h-wrapper'>
                 <h1>What <span>Customers Say</span></h1>
                 <h6 className='text-gray'>Our clients’ testimonials are the best proof of our high level of service</h6>
 
@@ -26,7 +26,7 @@ const Testimonials = () => {
                     </Col>
                     <Col xs={12} md={6} lg={4}>
                         <Card.Img variant="top" className='user mx-auto d-block' src={user2} />
-                        <Card.Body className='ps-5'>
+                        <Card.Body className='testimonial-contents ps-5'>
                             <Card.Title className='text-center'>MARY ANDERSON</Card.Title>
                             <Card.Text>
                                 <i>"Leslie was an excellent Travel Agent for us and considered our unique needs as she planned our itinerary. Every suggestion she made was excellent."</i>

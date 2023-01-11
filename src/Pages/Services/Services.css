@@ -1,19 +1,140 @@
-.service {
-  transition: 0.5s;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-  background-color: #ffffff;
+.section-heading {
+  font-size: 38px;
+  font-weight: 700;
+  color: #010101;
+  text-align: center;
 }
-.service:hover {
-  box-shadow: 2px 5px 10px gray;
+.img-holder {
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px 5px 0 0;
 }
-.button {
+.img-holder img {
+  vertical-align: top;
+  border-radius: 5px 5px 0 0;
+  transition: ease, 0.8s;
+}
+.img-holder img:hover {
+  -webkit-transform: scale(1.08);
+  transform: scale(1.08);
+}
+.discount-amount {
+  background: #f6dc05;
+  font-size: 16px;
+  color: #010101;
+  position: absolute;
+  top: 17px;
+  right: -32px;
+  font-weight: 700;
+  width: 124px;
+  text-align: center;
+  display: block;
+  line-height: 1;
+  padding: 5px 0;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.discount-amount span {
+  font-size: 14px;
+  font-weight: 400;
+}
+.text-holder {
+  padding: 48px 0 30px;
+  border: 1px solid #ddd;
+  border-top: 0;
+  position: relative;
+  border-radius: 0 0 5px 5px;
+}
+.price-info {
+  text-align: left;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: -17px;
+  padding: 0 20px;
+}
+.price-holder {
+  display: inline-block;
+  vertical-align: middle;
+  background: #f6f6f3;
+  padding: 0 20px;
+  border-radius: 100px;
+  text-align: center;
+  margin: -8px 0 0;
+  padding: 7px 20px;
+  -webkit-box-shadow: 0 2px 2px rgb(0 0 0 / 7%);
+  box-shadow: 0 2px 2px rgb(0 0 0 / 7%);
+}
+.price-holder .old-price {
+  color: #f95252;
+  font-size: 13px;
+  font-weight: 400;
+  display: inline-block;
+  vertical-align: middle;
+  text-decoration: line-through;
+  margin-right: 5px;
+}
+.price-holder .new-price {
+  font-size: 16px;
+  font-weight: 900;
+  color: #010408;
+  display: inline-block;
+  vertical-align: middle;
+  padding-left: 3px;
+}
+.text-holder .trip-info {
+  padding: 0 20px 20px;
+}
+.text-holder .trip-info .title {
+  font-size: 20px;
+  line-height: 1.3em;
+  font-weight: 700;
+  margin: 0 0 10px;
+}
+.text-holder .trip-info .meta-info {
+  font-size: 14px;
+  color: #6e6e6e;
+  display: block;
+  margin: 15px 0 5px;
+}
+.text-holder .trip-info .meta-info .place {
+  margin-right: 20px;
+}
+.category-trip-desc {
+  font-size: 18px;
+  line-height: 1.889em;
+}
+.category-trip-desc p {
+  margin: 15px 0 5px;
+}
+.text-holder .btn-holder {
+  text-align: center;
+  margin: 0;
+}
+.primary-btn {
+  display: inline-block;
+  background: #5c7cfb;
+  color: #ffffff;
+  padding: 14px 43px;
+  line-height: 1.6875em;
+  font-size: 0.8em;
+  font-weight: 700;
+  border: 1px solid #5c7cfb;
+  border-radius: 100px;
+  transition: ease, 0.2s;
+  text-decoration: none;
+}
+.primary-btn:hover,
+.primary-btn:focus {
+  background: #ffffff;
+  border-color: #5c7cfb;
+  color: #5c7cfb;
+  text-decoration: none;
+}
+/* .button {
   background-color: #5c7cfb;
   border: #ef6c00;
   color: white;
   border-radius: 5px;
   width: max-content;
-}
-
-.service i {
-  color: #5c7cfb;
-}
+} */
