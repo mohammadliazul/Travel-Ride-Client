@@ -30,17 +30,15 @@ const Header = () => {
                             <NavLink to='/admin' className='nav-Link fw-3 hv fs-5' >Admin</NavLink>
                         </Nav>
                         <Nav>
-
-                            <Link to='' className='nav-Link mt-2'><img
-                                className="rounded-circle"
-                                style={{ width: '40px' }}
-                                src={user?.photoURL}
-                                alt=""
-                            /></Link>
+                            {user?.photoURL &&
+                                <Link to='' className='nav-Link mt-2'>
+                                    <img className="rounded-circle" style={{ width: '40px' }} 
+                                    src={user?.photoURL} alt=""/>
+                                </Link>
+                            }
                             {
                                 user?.email &&
                                 <Navbar.Text className='text-white fw-3 fs-5 mt-1 ms-2' > {user?.displayName}</Navbar.Text>
-
                             }
                             {
                                 user?.email ?

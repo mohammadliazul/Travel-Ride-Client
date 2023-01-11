@@ -29,6 +29,21 @@
 .show > .navbar-nav > .nav-Link {
   margin-left: 0;
 }
+.show .btn-authentication {
+  border: none !important;
+  background-color: none !important;
+  border-radius: none !important;
+  padding: 0 !important;
+  font-size: 17px !important;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: 0.5s ease-in-out;
+  color: #ffffffcc;
+}
+.show .btn-authentication:hover {
+  color: #fff;
+}
 .nav-toggle-button {
   background-img: #fff;
   color: white;
