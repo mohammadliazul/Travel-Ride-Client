@@ -5,14 +5,14 @@
   background-repeat: no-repeat;
   background-position: center;
 }
+.banner-bg h6 {
+  font-weight: 700;
+}
 .text {
-  color: rgb(153, 152, 152);
+  color: #6e6e6e;
 }
 .icon {
   background-color: #5c7cfb;
   border-radius: 50%;
   width: auto;
-}
-.banner-bg span {
-  color: #5c7cfb;
 }

@@ -1,25 +1,132 @@
-.footer-logo {
-  color: #5c7cfb;
+.footer-section {
+  background: url("../../../Images/footer-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
-.social-icon {
-  list-style: none;
-  cursor: pointer;
+.footer-t {
+  padding: 90px 0;
 }
-.icon-style {
-  transition: 0.5s ease-in-out;
+.footer-col-wrapper {
+  margin: 0 -15px;
 }
-.icon-style:hover {
-  fill: #5c7cfb;
-  background-color: #ffffff;
+.widget {
+  color: #fff;
+  margin-bottom: 30px;
+}
+.widget-title {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+.widget-text p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+.widget ul {
+  margin: 0;
   padding: 0;
+  list-style: none;
+}
+.widget ul li {
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.widget ul li:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+.post-thumbnail {
+  float: left;
+  width: 80px;
+  height: 80px;
+  margin-right: 20px;
+}
+.post-thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.entry-header .entry-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffffff99;
+  transition: ease 0.2s;
+  padding-right: 40px;
+}
+.posted-on {
+  font-size: 14px;
+  color: #ffffff99;
+}
+.entry-header .entry-title:hover,
+.posted-on:hover,
+.quick-links-wrapper li a:hover {
+  color: #fff;
+}
+.quick-links-wrapper li a {
+  font-size: 18px;
+  color: #ffffff99;
+  transition: ease 0.2s;
+}
+.contact-info-wrapper li {
+  font-size: 18px;
+  border-bottom: none !important;
+  padding-bottom: 0 !important;
+}
+.contact-info-wrapper ul li i {
+  color: #fff;
+  font-size: 16px;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 100%;
+  position: absolute;
+  left: 0;
+}
+.contact-list li {
+  position: relative;
+  padding-left: 50px;
+  min-height: 35px;
+}
+.contact-list li a,
+.contact-list li span {
+  color: rgba(255, 255, 255, 0.6);
+  transition: ease 0.2s;
+}
+.contact-list li a:hover,
+.contact-list li span:hover {
+  color: #fff;
 }
 
-.fill-color {
-  fill: grey;
+.social-networks {
+  margin-top: 30px !important;
 }
+.social-networks li {
+  display: inline-block;
+  margin: 5px;
+  position: relative;
+}
+.social-networks li:first-child {
+  margin-left: 0;
+}
+.social-networks li a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  font-size: 25px;
+}
+.footer-b {
+  padding: 20px 0;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+.site-name,
 .developer {
-  color: inherit;
+  color: rgba(255, 255, 255, 0.6);
 }
+.site-name:hover,
 .developer:hover {
-  color: #0dcaf0;
+  color: #fff;
 }

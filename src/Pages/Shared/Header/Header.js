@@ -9,6 +9,7 @@ import './Header.css';
 
 const Header = () => {
     const { user, logOut } = useAuth();
+
     return (
         <div>
             <Navbar collapseOnSelect expand="lg" className='nav-bar' fixed="top">
@@ -23,13 +24,9 @@ const Header = () => {
                     <Navbar.Toggle />
                     <Navbar.Collapse  >
                         <Nav className="mx-auto">
-                            <NavLink as={HashLink} to='/home#home' className='nav-Link fw-3 text-white hv fs-5' >Home</NavLink>
+                            <NavLink as={HashLink} to='/home#home' className='nav-Link fw-3 hv fs-5' >Home</NavLink>
                             <NavLink as={HashLink} to='/tours' className='nav-Link fw-3  hv fs-5' >Tours</NavLink>
-                            {/* <NavLink to='/about' className='nav-Link fw-3 text-white hv fs-5' >About</NavLink> */}
                             <NavLink to='/myTour' className='nav-Link fw-3 hv fs-5' >My Tour</NavLink>
-                            {/* <NavLink to='/manageBooking' className='nav-Link fw-3 text-white hv fs-5' >Manage Booking</NavLink>
-                            <NavLink to='/addNewTour' className='nav-Link fw-3 text-white hv fs-5 ' >Add New Tour</NavLink>
-                            <NavLink to='/manageTours' className='nav-Link fw-3 text-white hv fs-5' >Manage Tours</NavLink> */}
                             <NavLink to='/admin' className='nav-Link fw-3 hv fs-5' >Admin</NavLink>
                         </Nav>
                         <Nav>

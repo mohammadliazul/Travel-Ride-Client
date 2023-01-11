@@ -100,6 +100,10 @@
 .text-holder .trip-info .meta-info .place {
   margin-right: 20px;
 }
+.place i,
+.time i {
+  color: rgb(35 35 35 / 60%);
+}
 .category-trip-desc {
   font-size: 18px;
   line-height: 1.889em;

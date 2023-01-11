@@ -52,7 +52,7 @@ const WhyTravelRide = () => {
         <div className='banner-bg'>
             <div className='py-5'>
                 <div>
-                    <h1 className='text-center mb-5'>Why <span>Travel-Ride</span></h1>
+                    <h2 className='text-center mb-5 section-heading text-white'>Why Travel Ride</h2>
                 </div>
                 <Container>
                     <Row className='mt-3'>
@@ -63,7 +63,7 @@ const WhyTravelRide = () => {
                                     <Image className='icon p-4 m-3' src={pic} />
                                 </div>
                                 <div className='ps-3'>
-                                    <h6 className='text-bold'>{title}</h6>
+                                    <h6 className=''>{title}</h6>
                                     <p className='text'>{sub_title}</p>
                                 </div>
                             </div>
